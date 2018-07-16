@@ -22,4 +22,24 @@ $(document).ready(function() {
       $(".mission-text").removeClass("fromright");
     }
   });
+
+  $(".gallary-list-item").click(function() {
+    let val = $(this).attr("data-filter");
+
+    $(this)
+      .addClass("active-item")
+      .siblings()
+      .removeClass("active-item");
+
+    if (val === "all") {
+      $(".filter").show(500);
+    } else {
+      $(".filter")
+        .not(`.${val}`)
+        .hide(500);
+      $(".filter")
+        .filter(`.${val}`)
+        .show(500);
+    }
+  });
 });
