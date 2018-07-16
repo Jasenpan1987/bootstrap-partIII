@@ -109,3 +109,47 @@ header {
 /* banner ends  */
 
 /* header ends  */
+
+/* mission start */
+.mission {
+  background: #151f20;
+}
+
+.under-line {
+  width: 150px;
+  margin: auto;
+  border: 3px solid #eee;
+}
+
+.fromleft {
+  animation-duration: 2s;
+  animation-name: fromleft;
+}
+
+.fromright {
+  animation-name: fromright;
+  animation-duration: 2s;
+}
+
+@keyframes fromleft {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromright {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* mission ends  */
