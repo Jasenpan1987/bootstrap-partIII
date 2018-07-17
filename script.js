@@ -42,4 +42,17 @@ $(document).ready(function() {
         .show(500);
     }
   });
+
+  $(window).scroll(function() {
+    let position = $(this).scrollTop();
+    if (position >= 4487) {
+      [$(".card-1"), $(".card-2"), $(".card-3")].forEach(card =>
+        card.addClass("animateCard")
+      );
+    } else {
+      [$(".card-1"), $(".card-2"), $(".card-3")].forEach(card =>
+        card.removeClass("animateCard")
+      );
+    }
+  });
 });
