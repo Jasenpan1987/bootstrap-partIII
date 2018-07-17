@@ -344,3 +344,17 @@ input:placeholder-shown + .label {
   }
 }
 /* contact ends  */
+
+/* footer start */
+.footer-link {
+  color: #eee;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+
+.footer-link:hover {
+  color: #70abd2;
+  text-decoration: none;
+}
+
+/* footer ends  */
